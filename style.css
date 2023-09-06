@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'futura';
+    src: url(futur.ttf);
+}
+p{
+    font-size: x-large;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: futura;
+}
+h1,h2{
+    text-shadow: 0 0 4px #ffffff, 0 0 5px #ffffff;
+}
+
+/*--------Header CSS--------*/
+#header
+{
+    height: 100vh;  
+    background-image: url(IMG_3181.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.user-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    
+}
+.user-box img{
+    width: 250px;
+    height:250px ;
+    border-radius: 50%;
+    border: 2px solid #6caed5;
+    transition: 1s;
+}
+.user-box img:hover{
+    filter: drop-shadow( 0px 0px 15px rgb(255, 255, 255));
+    
+}
+.user-box::before{
+    position: absolute;
+    content: "";
+    top: 0%;
+    margin-top: -15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width:280px;
+    height:280px ;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    z-index: -1;
+}
+
+.user-box h1{
+    color: aliceblue;
+    font-family: futura;
+    margin: 10px;
+}
+.user-box p{
+    color: aliceblue;
+    font-size: larger;
+
+}
+.scroll-btn{
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    padding: 10px, 10px, 20px;
+    border-radius: 30px;
+
+}
+.scroll-bar span{
+border: 2px solid #fff;
+font-size: 10px;
+border-radius: 30px;
+}
+.scroll-bar{
+    animation: mover 1s infinite alternate;
+}
+@keyframes mover{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
+}
+
+/*--------About-----------*/
+.about{
+    padding-top: 270px;
+    margin-bottom:-130px;
+    padding-bottom: 270px;
+
+}
+.profile-img{
+    border-radius: 50px;
+    padding: 20px;
+    width: 500px;
+    max-width: 100%;
+    height: 500px;
+    box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+      transition: 0.5s;
+      
+}
+.profile-img:hover{
+    transform: translateY(-3%);
+}
+
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress{
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+.progress-bar{
+    border-radius: 16px;
+    background: rgb(36, 2, 56) !important;
+
+}
+/*-------------resume-----------*/
+.resume{
+    margin-top:-50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #f9f9f9;
+}
+.resume h3{
+    margin-bottom: 50px;
+
+}
+.timeline{
+    list-style-type: none;
+    position: relative;
+}
+.timeline::before{
+    content: '';
+    background-color: rgb(12, 3, 3);
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+}
+.timeline li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: #fff;
+
+}
+.timeline li  h4{
+    background-color: #000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0px 5px 20px;
+    color: #fff;
+    font-size: 15px; 
+}
+.timeline li  h4 span{
+    font-weight: bold;
+    color: #ccc;
+}
+/*---------services---------*/
+.services{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.services h1{
+    margin-bottom: 10px;   
+}
+.service-box{
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
+   transition: 2s;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius:0px;
+
+}
+.service-box .fa{
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.service-box span{
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.service-box p{
+    font-size: 15px;
+    margin: 20px;
+    color: #777;
+
+}
+.service-box:hover{
+    background: #000;
+    color: #777;
+   border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius:50px;
+    transition: 1s;
+    /* transform: translate(0,-10%); */
+}
+.service-box:hover p{
+    color:#fff;
+}
+
+/*-----------contact---------*/
+.contact{
+    padding-top: 50px;
+    background: linear-gradient(to right, #251f04, #534705, #251f04),url(images/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    
+}
+.contact .row{
+    padding: 30px 0;
+    font-size: 22px;
+    font-family: futura md bt;
+
+}
+.contact .col-md-4 .fa{
+    padding:10px;
+    font-size: 40px;
+}
+.contact .btn{
+    padding:10px 25px 10px 25px;
+    margin:5px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+.contact .btn:focus{
+     box-shadow: none !important;
+    
+}
+.contact .btn:hover{
+    border: 2px solid #000 !important;
+    background: #000 !important;
+    transition: 0.6s;
+}
+.contact .btn:hover{
+    border: 2px solid #000 !important;
+    background: #000 !important;
+    transition: 0.6s;
+}
+.contact .btn .fa{
+    margin-right: 10px;
+}
+.footer{
+    background: #000;
+    height: 50px;
+    margin-top:50px;
+    color: #fff;
+    padding-top: 10px;
+}
+.fa-heart-o{
+    color:red;
+}
+
+/*--------Social Icons--------*/
+.social-icons{
+    top:50%;
+    transform: translateY(-50%);
+    position: sticky;
+    z-index:1;
+    width:80px;
+}
+.social-icons ul{
+    padding:initial;
+
+}
+.social-icons ul li{
+    height: 40px;
+    width:40px;
+    list-style-type: none;
+    padding-left:12px;
+    padding-top:6px;
+    margin-top:5px;
+    color: #fff;
+    background: #000;
+    border-radius:0 20px 20px 0;
+
+}
+.social-icons ul li:hover{
+    padding-left: 30px;
+    width:80px;
+    transition: 1s;
+    border-radius:0 50px 50px 0;
+    background-color: rgb(162, 119, 0);
+}
