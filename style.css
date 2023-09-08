@@ -11,10 +11,16 @@ body
     padding: 0;
     font-family: futura;
 }
-h1,h2{
-    text-shadow: 0 0 4px #ffffff, 0 0 5px #ffffff;
+.nav-item{
+    padding-left: 20px;
 }
-
+.nav-item:hover{
+    background: black;
+    border-radius: 10px;
+}
+.nav-item:hover a{
+    color: white;
+}
 /*--------Header CSS--------*/
 #header
 {
@@ -23,6 +29,7 @@ h1,h2{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    text-shadow: 0 0 4px #ffffff, 0 0 5px #ffffff;
     
 }
 .user-box{
@@ -131,7 +138,7 @@ border-radius: 30px;
 .resume{
     margin-top:-50px;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     background-color: #f9f9f9;
 }
 .resume h3{
@@ -171,10 +178,13 @@ border-radius: 30px;
     font-weight: bold;
     color: #ccc;
 }
+#experience{
+    padding: 100px;
+}
 /*---------services---------*/
 .services{
-    padding-top:50px;
-    padding-bottom: 50px;
+    padding-top:100px;
+    padding-bottom: 100px;
 }
 .services h1{
     margin-bottom: 10px;   
@@ -223,12 +233,19 @@ border-radius: 30px;
 /*-----------contact---------*/
 .contact{
     padding-top: 50px;
-    background: linear-gradient(to right, #251f04, #534705, #251f04),url(images/contact-bg.jpg);
+    background: black;;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
     
+}
+.contact h2{
+    background-color: rgba(162, 119, 0, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 .contact .row{
     padding: 30px 0;
